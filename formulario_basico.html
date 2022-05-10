@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Reserva</h1>
+    <fieldset>
+            <form action="formularios/formulario.html">
+                <h2>Faça aqui sa reserva:</h2>
+                <label>
+                    Nome completo: <br>
+                    <input type="text" name="nome" required minlength="2"><br>
+                </label>
+                <label>
+                    Telefone de contato: <br>
+                    <input type="text" name="phone" class="data" required minlength="11" maxlength="16"><br>
+                </label>
+                <label>
+                    Número de pessoas: <br>
+                    <input type="number" name="qtdPeople" class="medida"  required minlength="1" maxlength="10"><br>
+                </label>
+                <label>
+                    E-mail de cadastro: <br>
+                    <input type="email" name="email" id="email"><br>
+                </label>
+                <label>
+                    Data/Horário: <br>
+                    <input type="datetime-local" name="marcacao"  class="data"><br>
+                </label>
+                <label>
+                    <input type="checkbox" name="infos" id="infos">Você quer receber informações por e-mail ?
+                </label>
+                <button type="submit">Fazer reserva</button>
+            </form>
+    </fieldset>
+    
+</body>
+</html>
